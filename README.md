@@ -15,10 +15,11 @@ The datasets used in the paper and authors information are listed [here](http://
 ## Terms and Conditions
 If you use this code as part of any published research, please consider acknowledging our KDD 2020 paper.
 
+```
 @inproceedings{ko2020incremental,
   title={Incremental Lossless Graph Summarization},
   author={Ko, Jihoon and Kook, Yunbum and Shin, Kijung},
   booktitle={ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
   year={2020},
 }
-
+```
