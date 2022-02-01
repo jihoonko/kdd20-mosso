@@ -4,7 +4,7 @@ rm -rf output
 mkdir class
 mkdir output
 
-javac -cp ./fastutil-8.2.2.jar -d class $(find ./src -name *.java)
+javac -cp ./fastutil-8.5.6.jar -d class $(find ./src -name *.java)
 
 echo make jar archive
 cd class

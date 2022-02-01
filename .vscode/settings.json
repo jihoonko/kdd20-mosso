@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\develope\\jar_files\\fastutil-8.5.6.jar"
+    ],
+    "java.dependency.packagePresentation": "flat"
+}

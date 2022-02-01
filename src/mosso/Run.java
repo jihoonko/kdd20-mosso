@@ -2,6 +2,7 @@ package mosso;
 
 import mosso.algorithm.*;
 
+import java.util.Arrays;
 import java.io.IOException;
 import java.util.Date;
 
@@ -11,6 +12,7 @@ public class Run {
 
     public static void main(String[] args) throws IOException {
         Date today = new Date();
+        // System.out.println(Arrays.toString(args));
         System.out.println(today);
         final String inputPath = args[0];
         System.out.println("input_path: " + inputPath);
@@ -39,7 +41,8 @@ public class Run {
             System.out.println("interval : " + interval);
             module = new MoSSoMCMC(false, interval);
         } else if(sumMode.compareTo("sgreedy") == 0) {
-            final int interval = Integer.parseInt(args[3]);
+            // final int interval = Integer.parseInt(args[3]);
+            final int interval = Integer.parseInt("1000");
             System.out.println("interval : " + interval);
             module = new MoSSoGreedy(false, interval);
         } else {
