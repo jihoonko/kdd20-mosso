@@ -37,7 +37,7 @@ public class Run {
             System.out.println("escape probability : " + probability + ", n_samples : " + n_samples + ", TT : " + interval);
             module = new MoSSoSimple(false, probability, n_samples, interval);
         } else if (sumMode.compareTo("mcmc") == 0) {
-            final int interval = Integer.parseInt(args[3]);
+            final int interval = Integer.parseInt("1000");
             System.out.println("interval : " + interval);
             module = new MoSSoMCMC(false, interval);
         } else if(sumMode.compareTo("sgreedy") == 0) {

@@ -14,6 +14,16 @@
             "dependsOn": ["build"] 
         },
         {
+            "label": "run-mcmc",
+            "type": "shell",
+            "command":"./run.sh example_graph.txt output.txt mcmc 1000",
+            "group":{
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn":["build"]  
+       },
+        {
             "label": "build",
             "type": "shell",
             "command": "./compile.sh",
