@@ -22,10 +22,11 @@ public class Run {
         System.out.println("summarization_mode: " + sumMode);
         System.out.println();
 
-        final SummaryGraphModule module;
-
+        final SummaryGraphModule module;        
         if (sumMode.compareTo("mosso") == 0) {
-            final int probability = Integer.parseInt(args[3]);
+            System.out.println("0.3");
+            final int probability = Integer.parseInt("0.3");
+            //System.out.println(probability);
             final int n_samples = Integer.parseInt(args[4]);
             final int interval = Integer.parseInt(args[5]);
             System.out.println("escape probability : " + probability + ", n_samples : " + n_samples + ", TT : " + interval);

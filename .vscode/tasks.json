@@ -23,6 +23,16 @@
             },
             "dependsOn":["build"]  
        },
+       {
+            "label": "run-mosso",
+            "type": "shell",
+            "command":"./run.sh example_graph.txt output.txt mosso 0.3 120 1000",
+            "group":{
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn":["build"]  
+       },
         {
             "label": "build",
             "type": "shell",
